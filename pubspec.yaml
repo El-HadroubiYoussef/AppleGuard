@@ -1,0 +1,57 @@
+name: apple_guard
+description: "Flutter app for apple leaf disease detection using ONNX Runtime and LLMs."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations: # Required for internationalization
+    sdk: flutter
+  intl: ^0.20.0 # Must match the version required by flutter_localizations
+  flutter_launcher_icons: ^0.14.3 # Add this
+
+  google_generative_ai: ^0.4.0
+  provider: ^6.1.1
+  image_picker: ^1.2.1 # Updated
+  camera: 0.10.6
+  path_provider: ^2.1.1
+  path: ^1.9.0
+  flutter_markdown: ^0.6.23 # Updated to latest before discontinuation
+  fl_chart: ^1.2.0 # Updated
+  pdf: ^3.10.7
+  csv: ^5.1.1
+  share_plus: ^12.0.1 # Updated
+  permission_handler: ^12.0.1 # Updated
+  sqflite: ^2.3.0
+  http: ^1.6.0 # Updated
+  shared_preferences: ^2.5.4 # Updated
+  package_info_plus: ^9.0.0 # Updated
+  url_launcher: ^6.2.1
+  image: ^4.1.3
+  onnxruntime: ^1.4.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  mockito: ^5.4.0
+  sqflite_common_ffi: ^2.3.0
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png" # Path to your icon image
+  remove_alpha_ios: true # Remove alpha channel for iOS
+
+flutter:
+  generate: true # Enables code generation for l10n
+  uses-material-design: true
+  assets:
+    - assets/labels.txt # Disease labels
+    - assets/models/apple_disease_model.onnx # Your ONNX model
