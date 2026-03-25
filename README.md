@@ -84,7 +84,7 @@ Le modèle a été exporté à partir d'un modèle PyTorch entraîné sur l'ense
 
    ```bash
    git clone https://github.com/El-HadroubiYoussef/AppleGuard.git
-   cd apple-disease-detector
+   cd AppleGuard/
    ```
 
 2. Installer les dépendances
